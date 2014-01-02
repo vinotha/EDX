@@ -1,0 +1,146 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Course</title>
+
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+        <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/foundation.css" />
+        <!-- If you are using the gem version, you need this only -->
+        
+        
+       
+        <script src="js/vendor/custom.modernizr.js"></script>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation/foundation.js"></script>
+        <script src="js/foundation/foundation.section.js"></script>
+        
+        <script src="js/foundation/foundation.reveal.js"></script>
+        
+        <script>
+            document.write('<script src=/js/vendor/'
+                    + ('__proto__' in {} ? 'zepto' : 'jquery')
+                    + '.js><\/script>');
+        </script>
+        <script>
+            $(document).foundation();
+        </script>
+        <script>
+          $(document).ready(function() {
+            $("#all-contents").click(function() {
+            $("#all-contents-display").toggle();  
+            }
+          );
+          });
+          </script>
+    </head>
+    <body>
+      <header>
+        <div class="row">
+          <div class="large-8 columns">
+            </div>
+          <div class="large-4 columns">
+            <div class="top-bar-section">
+             
+               <span>Hai user</span>
+               <span><a href="#">Logout</a></span>
+                
+            </div>
+          </div>
+          </div>
+        <hr>
+        </header>
+     <div class="row">
+       <div class="large-12 columns">
+         
+         <a href="admin-home.php">  <img src="http://placehold.it/100x100&text=Home" /></a>
+         <a href="all-course.html">  <img src="http://placehold.it/100x100&text=All courses" /></a>
+              </div>
+       </div>
+      <div class="row" style="margin-top:30px">
+        <div class="large-12 columns">
+          <form>
+            <div class="row">
+              <div class="large-12 columns">
+            <label>Course Name</label>
+            </div>
+            </div>
+            <div class="row">
+              <div class="large-6 columns">
+            <input type="text" name="coursename" />
+            </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+            <label>Description</label>
+            </div>
+            </div>
+            <div class="row">
+              <div class="large-6 columns">
+            <textarea name="coursedescription"></textarea>
+            </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+            <label>Start Date</label>
+            </div>
+            </div>
+            <div class="row">
+              <div class="large-6 columns">
+            <input type="text" />
+            </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+            <label>End Date</label>
+            </div>
+            </div>
+            <div class="row">
+              <div class="large-6 columns">
+            <input type="text">
+            </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+            <label>Select Unit</label>
+            </div>
+            </div>
+            <div class="row">
+              <div class="large-6 columns">
+            <select>
+              <option>-Select-</option>
+              <option>Introduction </option>
+              <option>Fundamentals of C </option>
+            </select>
+                </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Enroll Students</label>
+                </div>
+              </div>
+            <div class="row">
+              <div class="large-6 columns">
+            <select>
+              <option>-Select-</option>
+              <option>student1</option>
+              <option>student2</option>
+            </select>
+                </div>
+            </div>
+                <div class="row">
+              <div class="large-12 columns">
+                <a href="all-course.html"><button class="small">Create course </button></a>
+            </div>
+            </div>
+            </form>
+          </div>
+        </div>
+     
+  </body>
+</html>

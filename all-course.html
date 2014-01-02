@@ -1,0 +1,105 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+
+  <title>All Course</title>
+
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/foundation.css" />
+  <!-- If you are using the gem version, you need this only -->
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel ="stylesheet" href ="css/layout.css">
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation/foundation.js"></script>
+  <script src="js/foundation/foundation.section.js"></script>
+
+  <script src="js/foundation/foundation.reveal.js"></script>
+
+  <script>
+    document.write('<script src=/js/vendor/'
+            + ('__proto__' in {} ? 'zepto' : 'jquery')
+            + '.js><\/script>');
+  </script>
+  <script>
+    $(document).foundation();
+  </script>
+  <script>
+    $(document).ready(function() {
+      $("#all-contents").click(function() {
+        $("#all-contents-display").toggle();
+      }
+      );
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="row">
+      <div class="large-8 columns">
+      </div>
+      <div class="large-4 columns">
+        <div class="top-bar-section">
+
+          <span>Hai user</span>
+          <span><a href="#">Logout</a></span>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+  </header>
+  <div class="row">
+    <div class="large-12 columns">
+
+      <a href="admin-home.php">  <img src="http://placehold.it/100x100&text=Home" /></a>
+      <a href="course.html">  <img src="http://placehold.it/100x100&text=New course" /></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="row">
+        <div class="large-12 columns" style="margin-top:30px">
+          <button class="small">Delete selected courses</button>
+        </div>
+      </div>
+
+
+      <table>
+        <tr>
+          <th>select</th>
+          <th>Course Name</th>
+          <th>Created on</th>
+          <th>Created by</th>
+          <th>edit/delete</th>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>Introduction to computer science</td>
+          <td>1st Jan 2014</td>
+          <td>vino</td>
+          <td>edit/delete</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>Fundamentals of C</td>
+          <td>1st Jan 2014</td>
+          <td>vino</td>
+          <td>edit/delete</td>
+        </tr>
+
+      </table>
+
+
+
+
+    </div>
+  </div>
+</body>
+</html>
